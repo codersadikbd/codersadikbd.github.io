@@ -120,16 +120,17 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   font-weight: var(--font-semi);
 }
 @media screen and (max-width: 767px) {
   .nav__menu {
-    position: fixed;
+    position: auto;
     top: var(--header-height);
     right: -100%;
     width: 80%;
     height: 100%;
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--second-color);
     transition: 0.5s;
   }
@@ -147,7 +148,7 @@ img {
 .nav__link:hover::after {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 1000%;
   height: 0.18rem;
   left: 0;
   top: 2rem;
