@@ -1,78 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>MD SADIK HASAN</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">MD SADIK HASAN</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link ">Home</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sadik</span><br> Web Developer</h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-                <div class="home__img">
-                    <img src="assets/img/SADIK.jpg">
-                </div>
-            </section>
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Want To Contact With Me?</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="mailto:devsadikbd@gmail.com" method="POST" enctype="text/plain" class="contact__form">
-                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                       
-                        <button type="submit" class="contact__button button">Send</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">MD SADIK HASAN</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/codersadikbd" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/codersadikbd" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://twitter.com/codersadikbd" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-                <a href="https://www.linkedin.com/in/codersadikbd" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/codersadikbd" class="footer__icon"><i class='bx bxl-github' ></i></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>MD SADIK HASAN</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">MD SADIK HASAN</a>
             </div>
-            <p class="footer__copy">&#169; MD SADIK HASAN </p>
-        </footer>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
+    <main class="l-main">
+        <!-- Home Section -->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi, I'm <span class="home__title-color">Sadik</span><br> Web Developer</h1>
+                <a href="#contact" class="button">Contact</a>
+            </div>
+            <div class="home__img">
+                <img src="assets/img/SADIK.jpg" alt="Sadik Hasan">
+            </div>
+        </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <p class="about__text">I am a passionate web developer with experience in creating dynamic and responsive websites.</p>
+        </section>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills__container">
+                <div class="skills__data">
+                    <h3 class="skills__title">HTML</h3>
+                    <div class="skills__bar" style="width: 90%;"></div>
+                </div>
+                <div class="skills__data">
+                    <h3 class="skills__title">CSS</h3>
+                    <div class="skills__bar" style="width: 80%;"></div>
+                </div>
+                <div class="skills__data">
+                    <h3 class="skills__title">JavaScript</h3>
+                    <div class="skills__bar" style="width: 70%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects__container">
+                <div class="project__item">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1.</p>
+                </div>
+                <div class="project__item">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="mailto:devsadikbd@gmail.com" method="POST" enctype="text/plain" class="contact__form">
+                <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                <button type="submit" class="contact__button button">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__title">MD SADIK HASAN</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/codersadikbd" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/codersadikbd" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://twitter.com/codersadikbd" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/in/codersadikbd" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/codersadikbd" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+        <p class="footer__copy">&#169; MD SADIK HASAN</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
